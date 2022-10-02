@@ -1,0 +1,26 @@
+using System;
+ 
+class Root
+{
+
+    static Double findX(Double A, Double B)
+    {
+        Double x = Math.Sqrt(3*A + 1);
+        Double xValue = x / B;
+        return xValue;
+    }
+
+
+    public static void Main()
+    {
+        try
+        {
+            Console.WriteLine("X value: " + findX(1, 0));
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine("Exception: " + ex);
+        }
+
+    }
+}
